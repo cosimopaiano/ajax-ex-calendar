@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lobster', cursive;
+    background-image: url(https://i.pinimg.com/originals/57/d4/f0/57d4f09a5de46039f2d9fef9305eca10.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.container-icons {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.month-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 80%;
+    
+}
+
+.month-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: calc(100% / 8);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQWGgn7mxhYWuHTduLOo_JW1jppAFmJE_MEuaCi2kts9vcZeOK7&usqp=CAU);
+    background-size: cover;
+    margin: 5px;
+    border: 3px solid white;
+    border-radius: 40px;
+    height: 80px;
+    text-align: center;
+    font-size: 17px;
+    transition: transform 1.8s;
+}
+
+li:hover {
+    transform: rotateX(360deg);
+}
+
+li.holiday {
+   background-image: url(https://paintingvalley.com/image/red-watercolor-background-20.jpg);
+   background-size: cover;
+}
+
+.prev,
+.next,
+h1 {
+    font-size: 50px;
+    color:white;
+}
+
